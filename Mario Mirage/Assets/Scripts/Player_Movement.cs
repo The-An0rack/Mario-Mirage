@@ -34,7 +34,7 @@ public class Player_Movement : MonoBehaviour
         if(moveX > 0.0f && !isFacingRight) FlipPlayer(); 
         else if(moveX < 0.0f && isFacingRight) FlipPlayer();
         //physics
-
+        
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
     void Jump()
